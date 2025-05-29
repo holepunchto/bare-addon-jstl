@@ -89,11 +89,11 @@ fetch_package("github:holepunchto/liburl")
 Llink the imported native library to the addon:
 
 target_link_libraries(
-  ${bare_addon}
-  PRIVATE
-    jstl
-  PUBLIC
-    url
+${bare_addon}
+PRIVATE
+jstl
+PUBLIC
+url
 )
 
 ## License
