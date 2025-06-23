@@ -5,7 +5,7 @@ find_package(cmake-fetch REQUIRED PATHS node_modules/cmake-fetch)
 
 project(bare_addon C CXX)
 
-fetch_package("github:holepunchto/libjstl#069d305")
+fetch_package("github:holepunchto/libjstl#cdf1d21")
 
 add_bare_module(bare_addon)
 
