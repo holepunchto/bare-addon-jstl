@@ -70,31 +70,28 @@ When finished, the resulting prebuilds can be downloaded to the `prebuilds/` dir
 gh run download --name prebuilds --dir prebuilds
 ```
 
+> [!IMPORTANT]
+> You still need to manually run `npm pub` to publish the package to npm.
+
 ## Dependencies
 
-Addons are rarely self-contained and most often need to pull in external native libraries.
+Addons are rarely self-contained and most often need to pull in external native libraries. For this, <https://github.com/holepunchto/cmake-fetch> should be used and is already available in this template as a development dependency.
 
-For example, we use <https://github.com/holepunchto/cmake-fetch> to install libjstl.
-
-You'll see an example of cmake-fetch usage in the [`CMakeLists.txt`](CMakeLists.txt) file.
-
-If your addon depends on another library you can add it much like we show with libjstl.
-
-Import the package in the CMakeLists.txt build definition:
+To fetch an external native library, such as <https://github.com/holepunchto/liburl>, add the following line _after_ the `project()` declaration in the build definition:
 
 ```cmake
 fetch_package("github:holepunchto/liburl")
 ```
 
-Llink the imported native library to the addon:
+Finally, link the imported native library to the addon:
 
+```cmake
 target_link_libraries(
-${bare_addon}
-PRIVATE
-jstl
-PUBLIC
-url
+  ${bare_addon}
+  PUBLIC
+    url
 )
+```
 
 ## License
 
