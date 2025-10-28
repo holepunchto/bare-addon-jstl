@@ -1,10 +1,10 @@
 # bare-addon-jstl
 
-Template repository for creating Bare native addons using [libjstl](https://github.com/holepunchto/libjstl). For information on how to use the template, see [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Template repository for creating Bare native addons using <https://github.com/holepunchto/libjstl>. For information on how to use the template, see [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
 ## Building
 
-<https://github.com/holepunchto/bare-make> is used for compiling the native bindings in [`binding.c`](binding.c). Start by installing the tool globally:
+<https://github.com/holepunchto/bare-make> is used for compiling the native bindings in [`binding.cc`](binding.cc). Start by installing the tool globally:
 
 ```console
 npm i -g bare-make
