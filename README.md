@@ -1,6 +1,6 @@
-# bare-addon-jstl
+# bare-addon-c++
 
-Template repository for creating Bare native addons using <https://github.com/holepunchto/libjstl>. For information on how to use the template, see [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Template repository for creating Bare native addons using C++ via <https://github.com/holepunchto/libjstl>. For information on how to use the template, see [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
 ## Building
 

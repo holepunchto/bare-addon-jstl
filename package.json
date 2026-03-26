@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "bare-addon-jstl",
+  "name": "bare-addon-c++",
   "version": "1.0.0",
   "description": "Example Bare addon",
   "exports": {
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/holepunchto/bare-addon-jstl.git"
+    "url": "git+https://github.com/holepunchto/bare-addon-c++.git"
   },
   "author": "Holepunch",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/holepunchto/bare-addon-jstl/issues"
+    "url": "https://github.com/holepunchto/bare-addon-c++/issues"
   },
-  "homepage": "https://github.com/holepunchto/bare-addon-jstl#readme",
+  "homepage": "https://github.com/holepunchto/bare-addon-c++#readme",
   "devDependencies": {
     "brittle": "^3.16.3",
     "cmake-bare": "^1.6.5",
