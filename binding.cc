@@ -4,8 +4,7 @@
 
 static inline std::string
 bare_addon_hello(js_env_t *env, js_receiver_t) {
-  std::string hello = "Hello addon";
-  return hello;
+  return "Hello from C++";
 }
 
 static js_value_t *
